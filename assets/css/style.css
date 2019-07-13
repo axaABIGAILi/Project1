@@ -1,0 +1,45 @@
+body{
+
+    background-image:url("../images/background.jpg")
+}
+
+.navbar{
+    background-color:rgb(110, 64, 27);
+    
+
+}
+
+.jumbotron{
+
+    background-color:#B06629;
+}
+
+
+
+
+
+#map {
+    float: right;
+    height: 400px;  /* The height is 400 pixels */
+    width: 47%;  /* The width is the width of the web page */
+    background-color:brown;
+}
+
+#info{
+    float:left;
+    height: 400px; 
+    width: 47%; 
+    background-color:rgb(48, 10, 10);
+
+}
+
+
+.footer {
+    position: fixed;
+    margin: 0 auto;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color:rgb(110, 64, 27);
+  }
