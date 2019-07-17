@@ -1,3 +1,4 @@
+js
 //grab zip code from user submit area to apply to weather api
 //wheather api
 //document ready
