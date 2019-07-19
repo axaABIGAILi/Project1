@@ -24,6 +24,7 @@ $('#weather').empty();
 
 // variable to store zipcode based on user input
 var zip = $('#zip').val();
+console.log (zip);
 // open weather API Key
 var openWeatherAPI = 'af04984d9a409670d1445bb7bbfa4f4b';
 
@@ -85,69 +86,48 @@ $.ajax({
 console.log("this is the response"+ currDrink[0].strDrink);
 console.log("this is the response"+ currDrink[0].strDrinkThumb);
 //$("#drink").html("<img class='drinkImage' src='"+ response.drinks[0].strDrinkThumb + "'/>");
-
+switch (currentWeather) {
+  case 'clear':
+  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[0].strDrinkThumb + "'/>");
+  break;
  
- 
+  case 'scatteredclouds':
+  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[64].strDrinkThumb + "'/>");
+  break;
 
-  console.log(weatherList[weather]);
-  var currentWeather= weatherList[weather];
+  case 'brokenclouds':
+  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[35].strDrinkThumb + "'/>");
+  break;
+
+  case 'showerrain':
+  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[63].strDrinkThumb + "'/>");
+  break;
+
+  case 'rain':
+  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[28].strDrinkThumb + "'/>");
+  break;
+
+  case 'thunderstorm':
+  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[32].strDrinkThumb + "'/>");
+  break;
+
+  case 'mist':
+  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[4].strDrinkThumb + "'/>");
+  break;
+
+  case 'snow':
+  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[101].strDrinkThumb + "'/>");
+  break;
+};
+  //console.log(weatherList[weather]);
+  //var currentWeather= weatherList[weather];
 
   //promises to get the result of ajax request
   //var results=response.data
   
- /*
-    if ( currentWeather === "clear") { 
-       display(clearDrinks);
-      
-      
-      console.log("the weather is clear drink something fun like tequila")
-      
-    }
-    else if ( currentWeather === "brokenclouds" ||                          currentWeather === "scatteredclouds") {
-      display(cloudyDrinks);
-      console.log ("the weather is cloudy lets drink something creamy")
-
-    }
-    else if (currentWeather === "mist" ||  //or statement (look up and statement &&)
-             currentWeather === "showerrain" ||
-             currentWeather === "rain" ||
-             currentWeather === "thunderstorm") {
-      display(rainyDrinks);
-          console.log("the weather is wet and cold out lets drink something with rum or whisky")
-    }
-
-    else if (currentWeather === "snow") {
-      display(snowDrinks);
-    console.log("it's so cold lets get drunk on cider or something")
-    }
-}); */
-
-function display(drinkArray){ 
-  $("#drink").empty();
-   for (var i = 0; i < drinkArray.length; i++){
-    var ptag = $("<p>"); //assigned to the var
-    ptag.addClass("drinkSpot");
-    ptag.text(drinkArray[i]); //put i because it is going through multiple of the arrays
-    $( "#drink" ).append( ptag );
-  }
-
-}
-//place if statements into .then function so it can pull all arrays and vars
-
-//pull weather and tell computer
-// if else statements and or for creating list on weather?
-//if weather === clear or sunny pull array ice drinks if (condition1) {}
-
-  //  block of code to be executed if condition1 is true
-//if weather === cold or iced pull array of ciders/ spiced drinks/ warm drinks if (condition2) {}
-  //  block of code to be executed if condition1 is true
  
-//if weather === cloudy or foggy pull array of specialty drinks, like cool unique drinks if (condition3) {}
-  //  block of code to be executed if condition1 is true
-//display drinks according to weather 
+    }); 
 
-//apply api and queryURL
-//performing an ajax get request to our queryurl
-//display cocktails on right side
-//pull weather and tell computer
-//display drinks according to weather
+
+
+
