@@ -10,53 +10,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src= "assets/javascript/app.js"> </script>    
-
+    <script src="./assets/javascript/app.js"></script>
   </head>
   <body>
-      <div class ="container1">
-            <nav class="navbar">
-                <a class="navbar-brand" href="#">
-                <img src="assets/images/coffee.jpg" width="75" height="75" alt=""></a>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+            <img src="https://media.giphy.com/media/xwl7p2weol4MU/giphy.gif" width="80" height="80" alt="logo"></a>
 
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Drinks!</button>
-                </form>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
 
-                
-
-                
-            </nav>
             
-            <div class="container ">
-                <!-- Just an image -->
-                
-
-                <br>
-                <div class="jumbotron">
-                    <h1 class="display-4">Where is my Drink!</h1>
-                </div>
-                <div id ="content">
-                    <!--map goes in here-->
-                    <div id="weather">
-
-                    </div>
-
-                    <!--details about the coffee place goes here-->
-                    <div id="drink">
-                    </div>
-                </div>
-
-
-                
-                
+        </nav>
+        
+        <div class="container col-lg-8 col-med-10 col-sm-12">
+            
+            <!-- Just an image -->
+            <br>
+            <div class="jumbotron ">
+                <h1 class="display-4"></h1>
+               
             </div>
-            <footer class="footer mt-auto py-3">
-                <p>Footer goes in here</p>
-                    
-            </footer>
+            <div class ="content">
+                <!--weather info in here-->
+                <div class="weather col-sm-12">
+
+                </div>
+               
+                <!--details abt drinks suggested goes in here-->
+                <div id="drink" class="drinks col-sm-12">
+
+                </div>
+            </div>
+
+
+            
+            
         </div>
+        <br>
+        <footer class="footer mt-auto py-3">
+            <p>© 2019 Bikash Kadariya, Abi, Lorena</p>
+               
+        </footer>
     </body>
 </html>

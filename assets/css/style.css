@@ -13,32 +13,39 @@ body{
 }
 
 .navbar{
-    background-color:rgb(110, 64, 27);
+    background-color:rgb(50, 165, 159);
     
 
 }
 
+.navbar-brand{
+    background-image: url('');
+}
+
 .jumbotron{
 
-    background-color:#B06629;
+    background-color:rgb(33, 150, 86);
+}
+
+br{
+    width: 100%;
+
 }
 
 
 
-
-
-#info {
-    float: right;
+.weather {
+    float: left;
     height: 400px;  /* The height is 400 pixels */
-    width: 47%;  /* The width is the width of the web page */
-    background-color:brown;
+    width:49%;  /* The width is the width of the web page */
+    background-color:rgb(163, 173, 21);
 }
 
-#map{
-    float:left;
+.drinks{
+    float:right;
     height: 400px; 
-    width: 47%; 
-    background-color:rgb(48, 10, 10);
+    width:49%; 
+    background-color:rgb(163, 173, 21);
 
 }
 
@@ -50,9 +57,29 @@ body{
     width: 100%;
     height: 60px; /* Set the fixed height of the footer here */
     line-height: 60px; /* Vertically center the text there */
-    background-color:rgb(110, 64, 27);
+    background-color:rgb(50, 165, 159);
   }
+<<<<<<< HEAD
 .drinkSpot{
     color: white;
     border: solid 1px greenyellow;
 }
+=======
+
+footer{
+    text-align: center;
+}
+
+
+@media(max-width: 767px) {
+    .weather { 
+      float:none;
+      width:;
+    }
+
+    .drinks { 
+        float:none;
+        width:;
+      }
+  }
+>>>>>>> 1fb6c49ed037957e7819c29b70bd0ceb33e962da
