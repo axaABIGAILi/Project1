@@ -80,3 +80,9 @@ function display(drinkArray){
 //if weather === cloudy or foggy pull array of specialty drinks, like cool unique drinks if (condition3) {}
   //  block of code to be executed if condition1 is true
 //display drinks according to weather 
+
+//apply api and queryURL
+//performing an ajax get request to our queryurl
+//display cocktails on right side
+//pull weather and tell computer
+//display drinks according to weather

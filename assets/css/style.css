@@ -9,7 +9,7 @@ https://www.canva.com/colors/color-palettes/dusky-knits/
 
 body{
 
-    background-image:url("../images/background.jpg")
+    background-image:url("../images/drinks2.jpg")
 }
 
 .navbar{
@@ -27,14 +27,14 @@ body{
 
 
 
-#map {
+#info {
     float: right;
     height: 400px;  /* The height is 400 pixels */
     width: 47%;  /* The width is the width of the web page */
     background-color:brown;
 }
 
-#info{
+#map{
     float:left;
     height: 400px; 
     width: 47%; 
