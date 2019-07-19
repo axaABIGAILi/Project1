@@ -10,13 +10,12 @@ body{
 
 }
 
-.navbar-brand{
-    background-image: url('');
-}
-
 .jumbotron{
 
-    background-color:rgb(33, 150, 86);
+    /*background-color:rgb(33, 150, 86);*/
+    background-color: #F3C10C;
+    margin:20px 0 20px 0;
+    padding: 30px;
 }
 
 br{
@@ -30,14 +29,16 @@ br{
     float: left;
     height: 400px;  /* The height is 400 pixels */
     width:49%;  /* The width is the width of the web page */
-    background-color:rgb(163, 173, 21);
+    /*background-color:rgb(163, 173, 21);*/
+    background-color: #3FD4D4;
 }
 
 .drinks{
     float:right;
     height: 400px; 
     width:49%; 
-    background-color:rgb(163, 173, 21);
+    /*background-color:rgb(163, 173, 21);*/
+    background-color: #3FD4D4;
 
 }
 
@@ -56,18 +57,34 @@ br{
     border: solid 1px greenyellow;
 }
 
+#gif {
+    margin-right: 30px;
+    float: left;
+}
+
 footer{
     text-align: center;
 }
 
 @media(max-width: 767px) {
+    .container {
+        margin: 5px auto;
+    }
+
     .weather { 
       float:none;
-      width:;
+      width:100%;
+      height: 300px;
+      margin-bottom: 5px;
     }
 
     .drinks { 
         float:none;
-        width:;
+        height: 300px;
+        width:100%;
       }
+
+    .jumbotron {
+        display: none;
+    }
   }
