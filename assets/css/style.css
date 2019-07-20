@@ -39,7 +39,14 @@ br{
     width:49%; 
     /*background-color:rgb(163, 173, 21);*/
     background-color: #3FD4D4;
+    text-align: center;
+    overflow: auto;
+}
 
+.drinkImage {
+    margin-top: 10%;
+    width: 75%;
+    height: auto;
 }
 
 
@@ -82,9 +89,17 @@ footer{
         float:none;
         height: 300px;
         width:100%;
+        padding: 3px;
+        overflow: auto;
       }
 
     .jumbotron {
         display: none;
+    }
+
+    .drinkImage {
+        height: 75%;
+        width: auto;
+        margin-top: 2%;
     }
   }
