@@ -118,6 +118,7 @@ switch (currentWeather) {
   case 'snow':
   $("#drink").append("<img class='drinkImage' src='"+ response.drinks[101].strDrinkThumb + "'/>");
   break;
+  default:
 };
   //console.log(weatherList[weather]);
   //var currentWeather= weatherList[weather];
