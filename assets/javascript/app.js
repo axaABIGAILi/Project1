@@ -88,35 +88,35 @@ console.log("this is the response"+ currDrink[0].strDrinkThumb);
 //$("#drink").html("<img class='drinkImage' src='"+ response.drinks[0].strDrinkThumb + "'/>");
 switch (currentWeather) {
   case 'clear':
-  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[0].strDrinkThumb + "'/>");
+  $("#drink").append("<img class='drinkImage' src='"+ response.drinks[0].strDrinkThumb + "'/>");
   break;
  
-  case 'scatteredclouds':
-  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[64].strDrinkThumb + "'/>");
+  case 'clouds':
+  $("#drink").append("<img class='drinkImage' src='"+ response.drinks[64].strDrinkThumb + "'/>");
   break;
 
   case 'brokenclouds':
-  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[35].strDrinkThumb + "'/>");
+  $("#drink").append("<img class='drinkImage' src='"+ response.drinks[35].strDrinkThumb + "'/>");
   break;
 
   case 'showerrain':
-  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[63].strDrinkThumb + "'/>");
+  $("#drink").append("<img class='drinkImage' src='"+ response.drinks[63].strDrinkThumb + "'/>");
   break;
 
   case 'rain':
-  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[28].strDrinkThumb + "'/>");
+  $("#drink").append("<img class='drinkImage' src='"+ response.drinks[28].strDrinkThumb + "'/>");
   break;
 
   case 'thunderstorm':
-  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[32].strDrinkThumb + "'/>");
+  $("#drink").append("<img class='drinkImage' src='"+ response.drinks[32].strDrinkThumb + "'/>");
   break;
 
   case 'mist':
-  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[4].strDrinkThumb + "'/>");
+  $("#drink").append("<img class='drinkImage' src='"+ response.drinks[4].strDrinkThumb + "'/>");
   break;
 
   case 'snow':
-  $("#drink").html("<img class='drinkImage' src='"+ response.drinks[101].strDrinkThumb + "'/>");
+  $("#drink").append("<img class='drinkImage' src='"+ response.drinks[101].strDrinkThumb + "'/>");
   break;
 };
   //console.log(weatherList[weather]);
