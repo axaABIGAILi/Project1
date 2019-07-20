@@ -26,6 +26,10 @@ $(document).ready(function (){
   
    event.preventDefault();
 
+
+  $('#zipsubmit').on('click', function () {
+  
+
   // empty weather div
   $('#weather').empty();
   
@@ -41,7 +45,8 @@ $(document).ready(function (){
   // ajax call to get the weather data
   $.ajax({
    method: 'GET',
-   url: "https://api.openweathermap.org/data/2.5/weather?zip=78758,us&APPID=af04984d9a409670d1445bb7bbfa4f4b",
+   // url: "https://api.openweathermap.org/data/2.5/weather?zip=78758,us&APPID=af04984d9a409670d1445bb7bbfa4f4b"
+   url: weatherQueryUrl,
   }).then(function(response){
    // push response into an array for later use/reference
    weatherCall = storeWeather(response);
