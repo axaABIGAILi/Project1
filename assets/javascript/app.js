@@ -22,8 +22,14 @@ $(document).ready(function (){
   var currentWeather;
   
   // get zipcode from user input
+  $('#zipbutton').on('click', function (event) {
+  
+   event.preventDefault();
+
+
   $('#zipsubmit').on('click', function () {
   
+
   // empty weather div
   $('#weather').empty();
   
@@ -39,6 +45,7 @@ $(document).ready(function (){
   // ajax call to get the weather data
   $.ajax({
    method: 'GET',
+   // url: "https://api.openweathermap.org/data/2.5/weather?zip=78758,us&APPID=af04984d9a409670d1445bb7bbfa4f4b"
    url: weatherQueryUrl,
   }).then(function(response){
    // push response into an array for later use/reference
@@ -58,7 +65,7 @@ $(document).ready(function (){
    $('#weather').append('<p><b>Current Temperature:</b> '+tempF+'&#176;F</p><p><b>Current Conditions: </b>'+response.weather[0].main+'</p><p>Today will be '+response.weather[0].description+' with a high of '+tempConvertF(response.main.temp_max)+'&#176;F and a low of '+tempConvertF(response.main.temp_min)+'&#176;F .</p>');
    // display the celsius button
    $('#celsius').css('display', 'inline');
-  });
+  })//.catch(function(error){console.log(error);});
   
   // closing zipcode button onclick function
   });
@@ -128,10 +135,3 @@ $(document).ready(function (){
   
    // closing doc.ready function
    });
-  
-  
-  
-  
-  
-  
-  
